@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "987880974332",
+    "project_id": "video-meeting-conference-22488",
+    "storage_bucket": "video-meeting-conference-22488.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987880974332:android:0d309826c0e03752fcb479",
+        "android_client_info": {
+          "package_name": "opensourceproject.videocallapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987880974332-ladmheg5jo1ljf4f2brc7nhb7k2vanki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMWwm-NkeRGcittWYQeTK6heHoNxpIANE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987880974332-ladmheg5jo1ljf4f2brc7nhb7k2vanki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

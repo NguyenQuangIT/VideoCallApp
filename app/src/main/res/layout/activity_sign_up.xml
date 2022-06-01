@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/PrimaryColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8sp"
+        android:paddingEnd="8sp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_back"
+            app:tint="@color/TextIconColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/oswald_semibold"
+            android:includeFontPadding="false"
+            android:text="@string/sign_up_Text"
+            android:textColor="@color/TextIconColor"
+            android:textSize="22sp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/please_input_infor"
+                android:textColor="@color/PrimaryTextColor"
+                android:textSize="20sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/email"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textSize="18sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/inputEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginEnd="8sp"
+                        android:background="@null"
+                        android:fontFamily="@font/oswald_regular"
+                        android:hint="@string/hint_gmail_com"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textColorHint="#757575"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/lastName"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textSize="18sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/inputLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginEnd="8sp"
+                        android:background="@null"
+                        android:fontFamily="@font/oswald_regular"
+                        android:hint="@string/lastName_hint"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textColorHint="#757575"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/FirstName"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textSize="18sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/inputFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginEnd="8sp"
+                        android:background="@null"
+                        android:fontFamily="@font/oswald_regular"
+                        android:hint="@string/firstName_hint"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="text"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textColorHint="#757575"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/password_str"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textSize="18sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/inputPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginEnd="8sp"
+                        android:background="@null"
+                        android:fontFamily="@font/oswald_regular"
+                        android:hint="@string/password_hint"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="textPassword"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textColorHint="#757575"
+                        android:textSize="18sp"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/confirm_password"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textSize="18sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/confirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginEnd="8sp"
+                        android:background="@null"
+                        android:fontFamily="@font/oswald_regular"
+                        android:hint="@string/password_hint"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="textPassword"
+                        android:textColor="@color/PrimaryTextColor"
+                        android:textColorHint="#757575"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/signUpButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/oswald_semibold"
+                    android:includeFontPadding="false"
+                    android:text="@string/sign_up_Text"
+                    android:textColor="@color/TextIconColor"
+                    android:textSize="15sp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+                
+                <ProgressBar
+                    android:id="@+id/signUpProgressBar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/already_have_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/oswald_regular"
+                android:includeFontPadding="false"
+                android:text="@string/already_have_account"
+                android:textColor="@color/PrimaryTextColor"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/signInText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/sign_in"
+                android:textColor="@color/AccentColor"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:padding="6sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">VideoCallApp</string>
+    <string name="WelcomeString">Chào mừng đến với ứng dụng của nhóm 3</string>
+    <string name="video_call_conference_app">Video Call | Conference App</string>
+    <string name="sign_in_your_account">Đăng nhập tài khoản của bạn</string>
+    <string name="email">Email</string>
+    <string name="hint_gmail_com">VD: quang@gmail.com</string>
+    <string name="password_str">Mật khẩu</string>
+    <string name="password_hint">\u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022 \u2022</string>
+    <string name="dont_have_account">Chưa có tài khoản?</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up_Text">Đăng ký</string>
+    <string name="lastName">Họ</string>
+    <string name="lastName_hint">VD: Nguyễn</string>
+    <string name="FirstName">Tên</string>
+    <string name="firstName_hint">VD: Quang</string>
+    <string name="already_have_account">Đã có tài khoản?</string>
+    <string name="please_input_infor">Vui lòng điền thông tin sau đây</string>
+    <string name="confirm_password">Nhắc lại mật khẩu</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="incoming_meeting_invitation">Cuộc gọi đến từ...</string>
+    <string name="sending_meeting_invitation">Đang mời tham gia cuộc họp...</string>
+</resources>
